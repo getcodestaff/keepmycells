@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KeepMyCells – Preserve Your Stem Cells</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -20,8 +21,17 @@
     header {
       background: #0f62fe;
       color: white;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
+      position: relative;
+    }
+    .logo {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
+    .logo img {
+      height: 40px;
     }
     header h1 {
       font-size: 2rem;
@@ -77,6 +87,10 @@
       text-align: center;
       padding: 2rem 1rem;
     }
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
     @media (max-width: 768px) {
       header h1 {
         font-size: 1.5rem;
@@ -85,11 +99,19 @@
         flex-direction: column;
         align-items: center;
       }
+      .logo {
+        position: static;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
+    <div class="logo">
+      <img src="/logo.png" alt="KeepMyCells Logo" />
+    </div>
     <h1>Preserve Your Stem Cells Today — Protect Your Health Tomorrow</h1>
     <p>Your future deserves a backup plan. Easily collect and store your stem cells with licensed professionals and FDA-compliant labs.</p>
     <div class="cta-buttons">
@@ -179,7 +201,7 @@
 
   <footer>
     <p>&copy; 2025 KeepMyCells Inc. All rights reserved.</p>
-    <p><a href="#" style="color:white; text-decoration:underline;">Terms</a> | <a href="#" style="color:white; text-decoration:underline;">Privacy</a> | <a href="#" style="color:white; text-decoration:underline;">Contact</a></p>
+    <p><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Contact</a></p>
   </footer>
 </body>
 </html>
